@@ -1,0 +1,4 @@
+michael:
+  name: Karolis Bingelis
+  email: admin@kbmediasolutions.net
+  password_digest: <%= User.digest('123456789') %>
