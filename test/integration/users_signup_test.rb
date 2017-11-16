@@ -14,5 +14,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div#<CSS id for error explanation>'
     assert_select 'div.<CSS class for field with error>'
     assert_not flash.FILL_IN
+        assert is_logged_in?
   end
 end
